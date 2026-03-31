@@ -1,0 +1,32 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "audio": {
+      "sampling_rate": 16000,
+      "_type": "Audio"
+    },
+    "sentence": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "speaker": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "segment_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "duration": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "has_english": {
+      "dtype": "bool",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

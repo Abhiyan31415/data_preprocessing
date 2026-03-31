@@ -1,0 +1,32 @@
+
+
+* [00:00 00:13] > So हाम्रो topic चाहिँ fuzzy logic हो हैन। [silence] अ [noise] fuzzy logic भनेको चाहिँ कुनै पनि एउटा discrete, discrete या crisp value लाई चाहिँ अ के भन्छ, fuzzy degree मा convert गर्ने हो हैन। 
+* [00:13 00:30] > And अ यसले, यसले गर्दा खेरि चाहिँ एउटै variable चाहिँ at the same time multiple categories लाई चाहिँ divide गर्न मिल्छ। 
+* [00:30 00:39] > [silence] अ unlike Boolean logic हैन, अ जुनमा चाहिँ just true or false मात्र record हुन्छ, extremity मात्र record हुन्छ। 
+
+
+
+* [00:39 00:53] > Fuzzy logic ले चाहिँ त्यो true or false 0 to 1 को बिचमा हुने value हरुलाई पनि determine गर्छ र store गर्छ, त्यसले चाहिँ better analysis गर्न help गर्छ। 
+* [00:53 01:03] > अनि अ हामीले चाहिँ fuzzy logic use, implement गरेर चाहिँ traffic light controller develop गरेका छौं। अनि यसको input variable हरु चाहिँ traffic density र waiting time हो। 
+* [01:03 01:19] > अनि output variable चाहिँ अ त्यो दुइटा variable को आधारमा चाहिँ green light चाहिँ एउटा signal मा चाहिँ कति time on हुनु पर्छ भनेर चाहिँ duration चाहिँ return गर्छ। 
+* [01:19 01:35] > So, as my friend told, the two inputs were traffic density and waiting time, and the output was to calculate the green duration. [silence] So, so for, for that purpose, we had first set the initial values for traffic density and waiting time which we could see in the code. 
+* [01:35 01:51] > So here we have the density membership function and the waiting membership function and the green membership function. [noise] So these were, these two density and the waiting membership functions provided the initial fuzzy logic representation for the data. 
+
+
+
+* [01:51 01:59] > So, so the initial representation looked like this: the traffic density being this and the input waiting time being this. And now with the live controller, we could switch the values between these two parameters. 
+* [01:59 02:12] > So, so we have these parameters, so this is a slider and we could switch the value. [silence] And, and based on this, we would get the normal green light. 
+* [02:12 02:25] > So how the procedure works is when we switch this value, this is a crisp value, so it is not yet in the fuzzy logic section. So for this, we can see this in the membership function. 
+* [02:25 02:43] > We see we have selected a value for the traffic density here; it is around 25, and now we have to convert this into the fuzzy logic and the representation we have set. [noise] So here we can see the representation would be touching the low for traffic density. 
+* [02:43 02:54] > And, and for the waiting time, there, there would be two representations we can see here is, here is the mixture of medium and long. And, and after the representation is set, after the representation is set, then we will, we will evaluate these parameters against each other. 
+* [02:54 03:08] > So here we can see there is one, one value for the traffic density, and there are two values for the waiting time. So we would be using the Mamdani fuzzy inference for this purpose. 
+* [03:08 03:19] > And after, after that, after we have done that, we can use separate rules for this. [silence] And, and for one rule, and for one rule, we can take one value of traffic density and waiting time and we can find the minimum value. 
+* [03:19 03:31] > We can find the minimum value, minimum membership value among these two parameters. And after that, there is another value of, another value of waiting time and traffic density, and we can find the minimum value of this. 
+* [03:31 03:42] > And then with these two minimize, minimum values, we can go on to the output, output fuzzy logic representation and, and do the further tasks which would be, which would be explained by my friend Ayush. 
+* [03:42 03:54] > So एकचोटी demo चाहिँ हेरौ है सबैले। साथीले नि अलिअलि भनिसक्यो, एकचोटी अब यो preset scenario हरु छन् हाम्रो। [noise] अघि जस्तै input पनि दिन त मिल्छ तर यो scenario हरु पनि छन्। 
+* [03:54 04:02] > Scenario मा चाहिँ एउटा अब rush hour को time मा हेरौ। हाम्रो input चाहिँ 52 vehicles per minute छ अनि waiting time चाहिँ 72 seconds छ पहिले। [silence] त्यसो भए चाहिँ अब preset हरु set भइसक्यो। 
+
+
+
+* [04:02 04:28] > त्यो अनुसार चाहिँ हाम्रो green चाहिँ कति हुनुपर्छ भन्दा खेिर चाहिँ 31 51.2 seconds छ। त्यो चाहिँ average हाम्रो 20 second भन्दा चाहिँ 31 second ले धेरै छ। यसमा चाहिँ दुइटा rule हरु activate भएको छ हाम्रो। अ rule activation हरु चाहिँ एउटा चाहिँ हाम्रो अ यो के रे traffic लाई के रे density, traffic density चाहिँ medium भएको अनि waiting time long भएको, दुइटा यो एउटा condition भयो। त्यसपछि अर्को चाहिँ traffic density high छ, waiting time पनि long छ भनेर चाहिँ very long निकाल्नु पर्यो। 
+* [04:28 04:49] > यो चाहिँ हाम्रो rule activation हरु भयो अनि यही अनुसार चाहिँ calculation हुन्छ हाम्रो membership function हरु। Output मा चाहिँ हाम्रो very long नै हो तर हामीले चाहिँ यसमा चाहिँ COG, center of gravity use गरेका छौं output को लागि। यसमा चाहिँ हामीले यसको formula चाहिँ integration of centroid times अ हाम्रो area छ plus ए upon integration of area छ। यही अनुसार चाहिँ हाम्रो output हरु चाहिँ यसरी नै आउँछ।

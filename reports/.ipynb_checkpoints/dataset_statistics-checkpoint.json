@@ -1,0 +1,146 @@
+{
+  "raw_data": {
+    "num_audio_files": 3,
+    "audio_files": [
+      "aashraya",
+      "mukesh",
+      "praja"
+    ],
+    "num_speakers": 3,
+    "speakers": [
+      "aashraya",
+      "mukesh",
+      "praja"
+    ]
+  },
+  "audio": {
+    "total_segments": 49,
+    "total_duration_seconds": 891.4639999999999,
+    "total_duration_minutes": 14.857733333333332,
+    "mean_duration": 18.193142857142856,
+    "median_duration": 17.0,
+    "min_duration": 5.0,
+    "max_duration": 44.0,
+    "std_duration": 7.147694636191791
+  },
+  "transcript": {
+    "total_samples": 49,
+    "total_characters_raw": 12266,
+    "total_characters_clean": 11998,
+    "total_chars_removed": 268,
+    "mean_sentence_length": 244.85714285714286,
+    "median_sentence_length": 232.0
+  },
+  "code_switching": {
+    "code_switched_count": 49,
+    "code_switched_pct": 100.0,
+    "pure_nepali_count": 0,
+    "pure_nepali_pct": 0.0,
+    "unique_english_words": 356,
+    "total_english_occurrences": 1033,
+    "top_20_english_words": [
+      [
+        "the",
+        40
+      ],
+      [
+        "So",
+        27
+      ],
+      [
+        "we",
+        25
+      ],
+      [
+        "value",
+        25
+      ],
+      [
+        "and",
+        23
+      ],
+      [
+        "for",
+        16
+      ],
+      [
+        "city",
+        15
+      ],
+      [
+        "use",
+        14
+      ],
+      [
+        "time",
+        14
+      ],
+      [
+        "density",
+        14
+      ],
+      [
+        "traffic",
+        13
+      ],
+      [
+        "waiting",
+        13
+      ],
+      [
+        "this",
+        13
+      ],
+      [
+        "is",
+        12
+      ],
+      [
+        "select",
+        11
+      ],
+      [
+        "of",
+        10
+      ],
+      [
+        "can",
+        10
+      ],
+      [
+        "one",
+        9
+      ],
+      [
+        "output",
+        9
+      ],
+      [
+        "fuzzy",
+        9
+      ]
+    ]
+  },
+  "splits": {
+    "train": 39,
+    "validation": 5,
+    "test": 5
+  },
+  "augmentation": {
+    "original_train_size": 39,
+    "augmented_train_size": 78,
+    "growth_factor": 2.0,
+    "augmentation_types": {
+      "white_noise": 12,
+      "pitch": 3,
+      "tempo": 8,
+      "pink_noise": 6,
+      "volume": 10
+    }
+  },
+  "speaker_distribution": {
+    "praja": 21,
+    "mukesh": 17,
+    "aashraya": 11
+  }
+}
